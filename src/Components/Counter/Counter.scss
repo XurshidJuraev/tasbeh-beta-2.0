@@ -1,0 +1,150 @@
+body{
+    background-image: url("../../img/stock-photo-cropped-view-woman-praying-rosary.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    max-width: 1240;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.tasbeh{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.select_option{
+    margin-right: -122px;
+    margin-left: 70px;
+    margin-top: -50px;
+    z-index: 99;
+    background-color: #4D4946;
+    border: none;
+    border-bottom: 2px solid #000;
+}
+.count{
+    display: block;
+    text-align: center;
+    font-size: 70px;
+    width: 210px;
+    height: 84px;
+    background-color: blueviolet;
+    border-radius: 20px;
+    margin-left: -20px;
+    border: 3px solid aqua;
+    cursor: pointer;
+
+    &:hover{
+        background-color: aqua;
+        border: 3px solid #4400ff;
+        color: blueviolet;
+        transition: all 0.3s ease-in-out;
+    }
+
+    
+    &__number{
+        width: 210px;
+        height: 200px;
+        border-radius: 50%;
+        border: none;
+        background-color: aqua;
+        font-size: 50px;
+        color: black;
+        border: 3px solid #4400ff;
+        margin-top: 100px;
+        display: block;
+        margin-left: -20px;
+        
+        
+        &:active{
+            opacity: 0.6;
+        }
+
+        &:hover{
+            background-color: #4400ff;
+            border: 3px solid aqua;
+            color: #ffffff;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        &0{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: none;
+            background-color: #4400ff;
+            margin-top: -50px;
+            border: 3px solid aqua;
+            color: white;
+
+            &:active{
+                opacity: 0.6;
+            }
+
+            &:hover{
+                background-color: aqua;
+                border: 3px solid #4400ff;
+                color: black;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+}
+.sozlar{
+    width: 370px;
+    height: 70px;
+    font-size: 22px;
+    background-color: #ffffff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px #000;
+    font-weight: 700;
+    font-style: italic;
+    cursor: pointer;
+}
+.divde{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.sozlar:hover{
+    background-color: #000;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 375px) {
+    .count__number0{
+        width: 70px;
+        height: 70px;
+    }
+    .count__number0:nth-child(odd){
+        width: 70px;
+        height: 70px;
+        margin-left: 30px;
+    }
+    .count__number0:nth-child(even){
+        width: 70px;
+        height: 70px;
+        margin-right: 80px;
+    }
+    .tasbeh{
+        width: 375px;
+    }
+    .count__number{
+        margin-left: -20px;
+    }
+    .count{
+        margin-left: -30px;
+    }
+    .select_option{
+        background-color: #11100E;
+    }
+}
